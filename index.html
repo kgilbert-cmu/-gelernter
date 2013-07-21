@@ -35,7 +35,7 @@ div.header {
     font-family:    "Verdana", sans-serif;
 	background-color:#556b2f;
 	clear:			left;
-    height:          180px;
+    height:         180px;
 }
 div.footer {
 	padding:		0.5em;
@@ -69,6 +69,7 @@ div.left  {
 	margin:			0;
 	padding:		1em;
 	clear:			both;
+    position:       fixed;
     
 }
 div.content  {
@@ -88,6 +89,9 @@ div.content  {
 }
 table.leftlist  {
 	padding-left:	15px;
+    background-color:lightgray;
+    width:          170px;
+    border:         1px solid black;
 }
 #pdf {
     background-image:url(images/pdf.gif);
@@ -105,11 +109,11 @@ table.leftlist  {
   <div class="header">
 	<img class= "headerimage" src="images/image002.jpg" alt="Profile Picture"/>  
 	
-	<h1 class="header"> Focus of Recent Research </h1>
+	<h1 class="header"> Focus of Recent Research </h1> <br>
         <div class="headerText">
             Geolocation and geographic information retrieval<br>
             Information visualization and mapping <br>
-            Cognitive systems design to reduce visual mistakes
+            Cognitive systems design to reduce visual mistakes <br>
         </div>
   </div>
   
@@ -122,7 +126,7 @@ table.leftlist  {
   <div class="left">
 	<p><table class="leftlist" border="1">
 		<tr>
-		  <td> <a href="#Home">Home</a> </td>
+		  <td> <a href="#Top">Home</a> </td>
 		</tr>
 		<tr>
 		  <td> <a href="#Papers">Publications </td>
