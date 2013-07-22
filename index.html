@@ -13,7 +13,7 @@
 }
 body {
 <!--	background-image:	url(images/whiteSpecks.gif); 	-->
-	font-family:	Georgia, "Trebuchet MS", Verdana, Helvetica, sans-serif;
+	font-family:	Georgia, sans-serif;
 	color:			000;		<!--  font is black -->
 	background:		#87ceeb;
 }
@@ -31,47 +31,48 @@ div.header {
 	padding:		0.5em;
 	color:			white;
     font-family:    "Verdana", sans-serif;
-	background-color:#556b2f;
+	background-color:#7ba0cd;
 	clear:			left;
     height:         180px;
 }
 div.footer {
 	padding:		0.5em;
 	color:			white;
-	background-color:#556b2f;
+	background-color:#4284d3;
 	clear:			left;
 }
-h1.research {
-    padding:		10px;
-	margin:			0;
-	padding-top:	20px;
-    padding-right:  1.5em;
-    float:			right;
-}
-
 div.researchText  {
     padding:		10px;
 	margin:			0;
 	padding-top:	20px;
     padding-right:  2em;
     float:			left;
-
+    font-family:    "Georgia";
 }
 h1.contact {
 	<!--padding:		10px;
 	margin:			0;
-    font-family:    "Verdana", sans-serif;-->
+    font-family:    "Georgia", sans-serif;-->
+    padding:		10px;
+	margin:			0;
+	padding-top:	20px;
+    float:			left;
+}
+h1.research {
+	<!--padding:		10px;
+	margin:			0;
+    font-family:    "Georgia", sans-serif;-->
     padding:		10px;
 	margin:			0;
 	padding-top:	20px;
     padding-left:   1.5em;
     float:			left;
+    font-size:      1.5em;
 }
-
 div.contactText  {
 	<!--padding:		10px;
 	margin:			0;
-    font-family:    "Verdana", sans-serif;-->
+    font-family:    "Georgia", sans-serif;-->
     padding:		10px;
 	margin:			0;
 	padding-top:	20px;
@@ -89,7 +90,7 @@ div.left  {
 }
 div.content  {
 	margin-left:	225px;
-	border-left:	1px solid red;
+	border-left:	1px solid black;
 	padding:		1em;
 }
 .headerimage
@@ -104,9 +105,10 @@ div.content  {
 }
 table.leftlist  {
 	padding-left:	15px;
-    background-color:lightgray;
+    background-color:#7ba0cd;
     width:          170px;
     border:         1px solid black;
+    font-size:      1.25em;
 }
 table.header  {
 	height:         180px;
@@ -123,6 +125,9 @@ table.header  {
 .bottompad  {
 	padding-bottom:	10px;
 }
+div.contact{
+    line-height:    100%;
+}
 </style>
 </head>
 <body> <a name="Top">
@@ -132,7 +137,7 @@ table.header  {
     <table class="header"><tr> <!-- single row table -->
     <td> <img class= "headerimage" src="images/image002.jpg"/> </td>
     <td>
-        <h1 class="contact"> Judith Gelernter </h1> <br>
+        <h1 class="contact"> Judith Gelernter, Ph.D. </h1> <br>
         <div class="contactText">
             <span>School of Computer Science, GHC 6416      </span><br />
             <center>Carnegie Mellon University              </center>
@@ -141,11 +146,11 @@ table.header  {
             <center>gelern at cs.cmu.edu                    </center>
         </div>
     </p></td>
-	<td><h1 class="contact"> Focus of Research </h1> <br>
+	<td><h1 class="research"> Focus of Research </h1> <br>
         <div class="researchText">
-          <p class="bottompad"> Geolocation and geographic information retrieval </p>
+          <p class="bottompad">Geolocation and geographic information retrieval </p>
           <p class="bottompad">Information visualization and mapping </p>
-          <p class="bottompad">Cognitive systems design to reduce visual mistakes </p>
+          <p class="bottompad">Design of systems to reduce visual mistakes </p>
         </div></td>
     </tr></table>
   </div>
@@ -157,29 +162,29 @@ table.header  {
 		  <td> <a href="#Top">Home</a> </td>
 		</tr>
 		<tr>
-		  <td> <a href="#Papers">Publications </td>
+		  <td> <a href="#Papers">Articles</td>
 		</tr>
 		<tr>
-		  <td> <a href="#Courses">Courses </td>
-		</tr>
-		<tr>
-		  <td> <a href="#Students">Graduate Students </td>
-		</tr>
-		<tr>
-		  <td> <a href="#Publications">Selected Publications </td>
-		</tr>
-		<tr>
-		  <td> <a href="#Projects">Past Projects </td>
+		  <td> <a href="#Books">Books</td>
 		</tr>
         <tr>
-		  <td> <a href="#Contact">Contact </td>
+		  <td> <a href="#Talks">Talks</td>
+		</tr>
+		<tr>
+		  <td> <a href="#Courses">Courses</td>
+		</tr>
+		<tr>
+		  <td> <a href="#Projects">Past Projects</td>
+		</tr>
+        <tr>
+		  <td> <a href="#Contact">Contact</td>
 		</tr>
 		</table>
 	</p>
   </div>
 
   <div class="content">
-    <h2><a name="Papers">Publications</a></h2> </br>
+    <h2><a name="Papers">Articles</a></h2> </br>
 	<p><table>
       <tr>
         <td> </td>
@@ -206,6 +211,10 @@ table.header  {
         <td>Gelernter, J. and Zhang, W. (under review).  A Spanish geo-parser. under review for <i>ACM SigSpatial</i>.  April 2013 </td>
       </tr>
       <tr>
+        <td> <a id="pdf" href="GeoInformatica.pdf"></a> </td>
+        <td> Gelernter, J. and Balaji, S. (2013). An algorithm for local geoparsing of microtext. <i>GeoInformatica</i>, January 2013</td>
+      </tr>
+      <tr>
         <td> <a id="pdf" href="GeoparsingGelernter.pdf"></a> </td>
         <td>Gelernter, J. and Wu, G. (2012).  High performance mining of social media data.  <i>XSEDE'12  July 16-20, Chicago, Illinois, U.S.A.</i> </td>
       </tr>
@@ -227,11 +236,11 @@ table.header  {
       </tr>
       <tr>
         <td><a id="pdf" href="Automatic document.pdf"></a></td>
-        <td>Cao, D., Gelernter, J., Carbonell, J. (2010). Automatic document filing according to user categories. <i>Computing Science and Statistics</i>.  </td>
+        <td>Cao, D., Gelernter, J., Carbonell, J. (2010). Automatic document filing according to user categories. <i>Computing Science and Statistics</i>. Omitted from these conference proceedings due to publisher oversight. </td>
       </tr>
       <tr>
         <td><a id="pdf" href="relevance studies.pdf"></a></td>
-        <td>Gelernter, J., Cao, D. and Carbonell, J. (2010).  Studies on relevance, ranking and results display.  <i>Journal of Computing </i>2(6) </td>
+        <td>Gelernter, J., Cao, D. and Carbonell, J. (2010).  Studies on relevance, ranking and results display.  <i>Journal of Computing </i>2(6), 7-20. </td>
       </tr>
       <tr>
         <td><a id="pdf" href="Fuzzy.pdf"></a></td>
@@ -260,21 +269,7 @@ table.header  {
       </table>
 	</p>  </br> </br>
 
-    <h2><a name="Courses">Courses</a></h2>  </br>
-    <p>
-        Independent research, School of Computer Science, Carnegie Mellon, 2008 - present<br />
-        Introduction to Geoinformatics, Carnegie Mellon University, Information Systems Department, School of Humanities and Social Sciences, spring 2011<br />
-    </p>  </br> </br>
-
-    <h2><a name="Students">Graduate Students</a></h2>  </br>
-    <p>
-        Chaitra </br>
-        Haibo </br>
-        Wei </br
-    </p>  </br> </br>
-
-
-    <h2><a name="Publications">Selected Publications</a></h2>  </br>
+    <h2><a name="Books">Books</a></h2>  </br>
     <p>
       <table>
         <!--- got a bunch of book chapters -->
@@ -294,8 +289,12 @@ table.header  {
             <td><a id="pdf" href="dumova.pdf"></a></td>
             <td>Gelernter, J. (2009).  Neogeography.  In T. Dumova and R. Fiordo (Eds), <i>Handbook of Research on Social Interaction Technologies and Collaboration Software</i>. [ISBN: 978-1-60566-368-5]</td>
         </tr>
-
-        <!--- followed by presentations -->
+      </table>
+    </p>  <br /> <br />
+    
+    <h2><a name="Talks">Talks</a></h2>  </br>
+    <p>
+      <table>
         <tr>
             <td></td>
             <td>Gelernter, J. (2013).  Research overview: Geolocation and Attention.  University of Maryland Center for Advanced Computer Studies, July 1, 2013. </td>
@@ -350,19 +349,27 @@ table.header  {
         </tr>
       </table>
     </p>  </br> </br>
+    
+    <h2><a name="Courses">Courses</a></h2>  </br>
+    <p>
+        Independent research, School of Computer Science, Carnegie Mellon, 2008 - present<br />
+        Introduction to Geoinformatics, Carnegie Mellon University, Information Systems Department, School of Humanities and Social Sciences, spring 2011<br />
+    </p>  </br> </br>
 
     <h2><a name="Projects">Past Projects</a></h2>  </br>
     <p>
     </p>  </br> </br>
 
-    <h2><a name="Contact">Contact:</a></h2>  <br />
+    <h2><a name="Contact">Contact</a></h2>  <br />
     <p>
+        <div class="contact">
         Judith Gelernter, Ph.D.                 <br />
         School of Computer Science, GHC 6416    <br />
         Carnegie Mellon University              <br />
         5000 Forbes Ave.                        <br />
         Pittsburgh, PA 15213                    <br />
         gelern at cs.cmu.edu                    <br />
+        </div>
     </p>  <br /> <br />
   </div>
 
