@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html><head><title>Judith Gelernter, Ph.D.</title>
 
-<!--
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
--->
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"> 
 
 <style type="text/css">
 * {
 	margin:			0px;
 	padding:		0px;
 	border:			0px;
+    font-family:    Georgia;	
 }
 body {
-<!--	background-image:	url(images/whiteSpecks.gif); 	-->
 	font-family:	Georgia, sans-serif;
-	color:			000;		<!--  font is black -->
-	background:		#87ceeb;
+	color:			000;		/*  font is black */
+	background:		#f5f5fa;
 }
 div	{
 	margin:			15px;
@@ -25,7 +23,7 @@ div.container  {
 	margin:			0px;
 	border:			1px solid gray;
 	line-height:	150%;
-    background-color:#d5dacb;
+    background-color:#f5f5fa;
 }
 div.header {
 	padding:		0.5em;
@@ -36,48 +34,42 @@ div.header {
     height:         180px;
 }
 div.footer {
-	padding:		0.5em;
-	color:			white;
-	background-color:#4284d3;
+	padding:		0.25em .5em 0em 1em;
+	background-color:none;
 	clear:			left;
-}
-div.researchText  {
-    padding:		10px;
-	margin:			0;
-	padding-top:	20px;
-    padding-right:  2em;
-    float:			left;
-    font-family:    "Georgia";
+	border-top:		3px solid #7ba0cd;
+	font-size:		75%;
 }
 h1.contact {
-	<!--padding:		10px;
-	margin:			0;
-    font-family:    "Georgia", sans-serif;-->
     padding:		10px;
 	margin:			0;
 	padding-top:	20px;
     float:			left;
-}
-h1.research {
-	<!--padding:		10px;
-	margin:			0;
-    font-family:    "Georgia", sans-serif;-->
-    padding:		10px;
-	margin:			0;
-	padding-top:	20px;
-    padding-left:   1.5em;
-    float:			left;
-    font-size:      1.5em;
 }
 div.contactText  {
-	<!--padding:		10px;
-	margin:			0;
-    font-family:    "Georgia", sans-serif;-->
     padding:		10px;
 	margin:			0;
 	padding-top:	20px;
     padding-left:   2em;
     float:			left;
+	text-align:		left;
+}
+h1.research {
+ /*    padding:		15px;   this doesn't work bec it is being overruled by the padding stmt below; I chg'd to single padding stmt */
+	margin:			0;
+/* 	padding-top:	20px;
+    padding-left:   1.5em;  */
+	padding:		10px;
+    float:			left;
+    font-size:      1.5em;	
+	clear:			both;	/* added Monday  */
+	text-align:		text-bottom;	/*   added Monday  */
+}
+div.researchText  {
+    padding:		10px;
+	margin:			0;
+    font-family:    "Georgia";
+	clear:			both;	/* added Monday  */
 }
 div.left  {
 	float:			left;
@@ -86,29 +78,24 @@ div.left  {
 	padding:		1em;
 	clear:			both;
     position:       fixed;
-
-}
-div.content  {
-	margin-left:	225px;
-	border-left:	1px solid black;
-	padding:		1em;
-}
-.headerimage
-{
-	float:			left;
-	width:			130px;
-	height:			180px;
-	<!-- margin:			5px; -->
-}
-.clearfloat  {
-	clear:both;
 }
 table.leftlist  {
-	padding-left:	15px;
+	padding-left:	3px;
     background-color:#7ba0cd;
     width:          170px;
     border:         1px solid black;
     font-size:      1.25em;
+}
+div.content  {
+	margin-left:	225px;
+	border-left:	1.5px solid #7ba0cd;
+	padding:		1em 1em 0em 1em;
+}
+.headerimage  {
+	float:			left;
+	width:			130px;
+	height:			178px;
+	padding-bottom: 5px;
 }
 table.header  {
 	height:         180px;
@@ -122,42 +109,68 @@ table.header  {
     overflow:hidden;
     white-space:nowrap;
 }
-.bottompad  {
+.padbottom  {
 	padding-bottom:	10px;
+}
+.padbottom2  {
+	padding-bottom:	15px;
+}
+.padtopnbottom  {
+	padding-top:	2px;
+	padding-bottom:	4px;
+}
+.padtopnbottom2  {
+	padding-top:	6px;
+	padding-bottom:	1px;
 }
 div.contact{
     line-height:    100%;
 }
+td  {
+	padding-left:	8px;
+}
+a:link {
+	color:#000080;
+}    /* unvisited link */
+a:visited {
+	color:white;
+} /* visited link */
 </style>
 </head>
 <body> <a name="Top">
 
 <div class="container">
   <div class="header">
-    <table class="header"><tr> <!-- single row table -->
-    <td> <img class= "headerimage" src="images/image002.jpg"/> </td>
-    <td>
-        <h1 class="contact"> Judith Gelernter, Ph.D. </h1> <br>
-        <div class="contactText">
-            <span>School of Computer Science, GHC 6416      </span><br />
-            <center>Carnegie Mellon University              </center>
-            <span>5000 Forbes Ave.
-            Pittsburgh, PA 15213                            </span><br />
-            <center>gelern at cs.cmu.edu                    </center>
-        </div>
-    </p></td>
-	<td><h1 class="research"> Focus of Research </h1> <br>
-        <div class="researchText">
-          <p class="bottompad">Geolocation and geographic information retrieval </p>
-          <p class="bottompad">Information visualization and mapping </p>
-          <p class="bottompad">Design of systems to reduce visual mistakes </p>
-        </div></td>
-    </tr></table>
+    <table class="header">
+	  <tr> <!-- single row table -->
+	    <td> <img class= "headerimage" src="images/image002.jpg"/> </td>
+		  <td>
+			<h1 class="contact"> Judith Gelernter, Ph.D. </h1> <br>
+			<div class="contactText">
+				School of Computer Science, GHC 6416      <br />  <!--  these rows of text really should be in <p> but I decided to skip it  -->
+				Carnegie Mellon University        		  <br />
+				5000 Forbes Ave. &nbsp; 		
+				Pittsburgh, PA 15213                       <br />
+				gelern@cs.cmu.edu                
+			</div>
+			<!-- </p> this is an unmatched tag -->
+		  </td>
+		<td class="padtopnbottom"><h1 class="research"> Focus of Research  </h1><br />
+          <div class="researchText">
+			<p class="padtopnbottom2">Geolocation and geographic information retrieval </p>
+			<p>Information visualization and mapping </p>
+			<p class="padbottom">Design of systems to reduce visual mistakes </p>
+          </div></td> 
+      </tr>
+	</table>
   </div>
 
   <!-- this is the table of contents -->
   <div class="left">
 	<p><table class="leftlist" border="1">
+		<tr>
+		  <td> &nbsp; </td>
+		</tr>
 		<tr>
 		  <td> <a href="#Top">Home</a> </td>
 		</tr>
@@ -176,20 +189,23 @@ div.contact{
 		<tr>
 		  <td> <a href="#Projects">Past Projects</td>
 		</tr>
+		<tr>
+		  <td> &nbsp; </td>
+		</tr>
 		</table>
 	</p>
   </div>
 
   <div class="content">
-    <h2><a name="Papers">Articles</a></h2> </br>
+    <h2 class="padbottom2"><a name="Papers">Articles</a></h2> 
 	<p><table>
       <tr>
         <td> </td>
-        <td> Ganesh, G., Gelernter, J., Krishnakumar, H. and Zhang, W. (in progress 2013) Automatic gazetteer enrichment with user geo-coded data.  In progress. </td>
+        <td> Gelernter, J., Ganesh, G., Krishnakumar, H. and Zhang, W. (in progress 2013) Automatic gazetteer enrichment with user geo-coded data. </td>
       </tr>
       <tr>
         <td> </td>
-        <td> Gelernter, J., Wang, H., Zhang, W.  (in progress 2013).  A geolocation algorithm for text and tweet.  In progress. </td>
+        <td> Gelernter, J., Wang, H., Zhang, W.  (in progress 2013).  A geolocation algorithm for text and tweet. </td>
       </tr>
       <tr>
         <td> </td>
@@ -266,7 +282,7 @@ div.contact{
       </table>
 	</p>  </br> </br>
 
-    <h2><a name="Books">Books</a></h2>  </br>
+    <h2 class="padbottom2"><a name="Books">Books</a></h2> 
     <p>
       <table>
         <!--- got a bunch of book chapters -->
@@ -289,7 +305,7 @@ div.contact{
       </table>
     </p>  <br /> <br />
     
-    <h2><a name="Talks">Talks</a></h2>  </br>
+    <h2 class="padbottom2"><a name="Talks">Talks</a></h2> 
     <p>
       <table>
         <tr>
@@ -347,7 +363,7 @@ div.contact{
       </table>
     </p>  </br> </br>
     
-    <h2><a name="Courses">Courses</a></h2>  </br>
+    <h2 class="padbottom2"><a name="Courses">Courses</a></h2> 
     <p>
         Introduction to Geoinformatics                  <br />
         Human Computer Interaction                      <br />
@@ -355,7 +371,7 @@ div.contact{
         Big Data Management and Curation                <br />
     </p>  </br> </br>
 
-    <h2><a name="Projects">Past Projects</a></h2>  </br>
+    <h2 class="padbottom2"><a name="Projects">Past Projects</a></h2> 
     <p>
         <a href="http:/www.metacarta.com">MetaCarta</a> - See <i> Latest News </i> <br />
         <a href="http://www.casos.cs.cmu.edu/projects/ora/">*ORA</a> - contribued geolocation code. <br />
@@ -364,7 +380,7 @@ div.contact{
 
   </div>
 
-  <div class="footer"> <script> document.write(Date()); </script> </div>
+  <div class="footer"> Last Update: &nbsp; &nbsp; <script> document.write(Date()); </script> </div>
 
 </div>
 
