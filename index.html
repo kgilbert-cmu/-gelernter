@@ -41,34 +41,31 @@ div.footer {
 	font-size:		75%;
 }
 h1.contact {
-    padding:		10px;
+    padding-left:	10px;
 	margin:			0;
-	padding-top:	20px;
     float:			left;
+    font-size:      160%;
 }
 div.contactText  {
     padding:		10px;
 	margin:			0;
-	padding-top:	20px;
     padding-left:   2em;
     float:			left;
 	text-align:		left;
 }
 h1.research {
- /*    padding:		15px;   this doesn't work bec it is being overruled by the padding stmt below; I chg'd to single padding stmt */
 	margin:			0;
-/* 	padding-top:	20px;
-    padding-left:   1.5em;  */
-	padding:		10px;
     float:			left;
     font-size:      1.5em;	
-	clear:			both;	/* added Monday  */
-	text-align:		text-bottom;	/*   added Monday  */
+	clear:			both;
+    padding-left:   10px;
+    padding-top:    0px;
+	
 }
 div.researchText  {
-    padding:		10px;
 	margin:			0;
     font-family:    "Georgia";
+    padding-left:    2em;
 	clear:			both;	/* added Monday  */
 }
 div.left  {
@@ -78,6 +75,7 @@ div.left  {
 	padding:		1em;
 	clear:			both;
     position:       fixed;
+    font-weight:    bold;
 }
 table.leftlist  {
 	padding-left:	3px;
@@ -86,6 +84,12 @@ table.leftlist  {
     border:         1px solid black;
     font-size:      1.25em;
 }
+table.leftlist a:link {
+	color:#000080;
+}    /* unvisited link */
+table.leftlist a:visited {
+	color:white;
+} /* visited link */
 div.content  {
 	margin-left:	225px;
 	border-left:	1.5px solid #7ba0cd;
@@ -110,7 +114,7 @@ table.header  {
     white-space:nowrap;
 }
 .padbottom  {
-	padding-bottom:	10px;
+	
 }
 .padbottom2  {
 	padding-bottom:	15px;
@@ -120,7 +124,7 @@ table.header  {
 	padding-bottom:	4px;
 }
 .padtopnbottom2  {
-	padding-top:	6px;
+	
 	padding-bottom:	1px;
 }
 div.contact{
@@ -129,12 +133,11 @@ div.contact{
 td  {
 	padding-left:	8px;
 }
-a:link {
-	color:#000080;
-}    /* unvisited link */
-a:visited {
-	color:white;
-} /* visited link */
+div.citation {
+    display:block;
+    padding-left:   1.5em;
+    text-indent:    -1.5em;
+}
 </style>
 </head>
 <body> <a name="Top">
@@ -147,19 +150,20 @@ a:visited {
 		  <td>
 			<h1 class="contact"> Judith Gelernter, Ph.D. </h1> <br>
 			<div class="contactText">
-				School of Computer Science, GHC 6416      <br />  <!--  these rows of text really should be in <p> but I decided to skip it  -->
-				Carnegie Mellon University        		  <br />
-				5000 Forbes Ave. &nbsp; 		
-				Pittsburgh, PA 15213                       <br />
-				gelern@cs.cmu.edu                
+				School of Computer Science, GHC 6416    <br />
+				Carnegie Mellon University        		<br />
+				5000 Forbes Ave. &nbsp; 		        <br /> 
+				Pittsburgh, PA 15213                    <br />
+				gelern at cs.cmu.edu                
 			</div>
 			<!-- </p> this is an unmatched tag -->
 		  </td>
-		<td class="padtopnbottom"><h1 class="research"> Focus of Research  </h1><br />
+		<td class="padtopnbottom"><h1 class="research"> Research areas </h1><br />
           <div class="researchText">
 			<p class="padtopnbottom2">Geolocation and geographic information retrieval </p>
-			<p>Information visualization and mapping </p>
+			<p> Information visualization and mapping </p>
 			<p class="padbottom">Design of systems to reduce visual mistakes </p>
+            <p> Inattentional blindness </p>
           </div></td> 
       </tr>
 	</table>
@@ -181,7 +185,7 @@ a:visited {
 		  <td> <a href="#Books">Books</td>
 		</tr>
         <tr>
-		  <td> <a href="#Talks">Talks</td>
+		  <td> <a href="#Talks">Presentations</td>
 		</tr>
 		<tr>
 		  <td> <a href="#Courses">Courses</td>
@@ -197,171 +201,131 @@ a:visited {
   </div>
 
   <div class="content">
-    <h2 class="padbottom2"><a name="Papers">Articles</a></h2> 
-	<p><table>
+    <h2><a name="Papers">Articles</a></h2> 
+	<p><div class="citation"><table>
       <tr>
-        <td> </td>
         <td> Gelernter, J., Ganesh, G., Krishnakumar, H. and Zhang, W. (in progress 2013) Automatic gazetteer enrichment with user geo-coded data. </td>
       </tr>
       <tr>
-        <td> </td>
         <td> Gelernter, J., Wang, H., Zhang, W.  (in progress 2013).  A geolocation algorithm for text and tweet. </td>
       </tr>
       <tr>
-        <td> </td>
         <td>Gelernter, J. (under review). Methods to measure and correct for inattentional blindness, under review for <i>iPerception</i>, July 2013 </td>
       </tr>
       <tr>
-        <td> </td>
         <td> Gelernter, J. (under review). Effective threat detection for surveillance, under review for the <i>IEEE International Conference on Technologies for Homeland Security, HST2013 </i>June 2013</td>
       </tr>
       <tr>
-        <td> </td>
         <td>Gelernter, J.  (under review) Computer simulations can lessen "overlook" mistakes due to inattentional blindness, under review for <i>ACM Transactions on Applied Perception</i>, April 2013</td>
       </tr>
       <tr>
-        <td> </td>
         <td>Gelernter, J. and Zhang, W. (under review).  A Spanish geo-parser. under review for <i>ACM SigSpatial</i>.  April 2013 </td>
       </tr>
       <tr>
-        <td> <a id="pdf" href="GeoInformatica.pdf"></a> </td>
-        <td> Gelernter, J. and Balaji, S. (2013). An algorithm for local geoparsing of microtext. <i>GeoInformatica</i>, January 2013</td>
+        <td> Gelernter, J. and Balaji, S. (2013). An algorithm for local geoparsing of microtext. <i>GeoInformatica</i>, January 2013 <a id="pdf" href="GeoInformatica.pdf"></a></td>
       </tr>
       <tr>
-        <td> <a id="pdf" href="GeoparsingGelernter.pdf"></a> </td>
-        <td>Gelernter, J. and Wu, G. (2012).  High performance mining of social media data.  <i>XSEDE'12  July 16-20, Chicago, Illinois, U.S.A.</i> </td>
+        <td>Gelernter, J. and Wu, G. (2012).  High performance mining of social media data.  <i>XSEDE'12  July 16-20, Chicago, Illinois, U.S.A.</i> <a id="pdf" href="GeoparsingGelernter.pdf"></a></td>
       </tr>
       <tr>
-        <td><a id="pdf" href="IJAGR special issue.pdf"></a></td>
-        <td>Gelernter, J., Carley, K. M. (2011).  Spatiotemporal network analysis and visualization.  <i>International Journal of Applied Geospatial Research</i>, special issue, November 2011 in press. </td>
+        <td>Gelernter, J., Carley, K. M. (2011).  Spatiotemporal network analysis and visualization.  <i>International Journal of Applied Geospatial Research</i>, special issue, November 2011 in press. <a id="pdf" href="IJAGR special issue.pdf"></a></td>
       </tr>
       <tr>
-        <td><a id="pdf" href="transactions published.pdf"></a></td>
-        <td>Gelernter, J. and Mushegian, N. (2011).  Geo-parsing crisis messages from microtext.  <i>Transactions in GIS</i>. 15(6): 753-773. </td>
+        <td>Gelernter, J. and Mushegian, N. (2011).  Geo-parsing crisis messages from microtext.  <i>Transactions in GIS</i>. 15(6): 753-773. <a id="pdf" href="transactions published.pdf"></a></td>
       </tr>
       <tr>
-        <td><a id="pdf" href="curation.pdf"></a></td>
-        <td>Lesk, M. and Gelernter, J. (2011).   Use of ontologies for data integration and curation. <i>International Journal of Digital Curation </i> 6 (1), 70-78. </td>
+        <td>Lesk, M. and Gelernter, J. (2011).   Use of ontologies for data integration and curation. <i>International Journal of Digital Curation </i> 6 (1), 70-78. <a id="pdf" href="curation.pdf"></a></td>
       </tr>
       <tr>
-        <td><a id="pdf" href="Mining Data Correlation from Multi-faceted Sensor Data in the Internet of Things.pdf"></a></td>
-        <td>Cao, D., Qiao, X.Q., Gelernter, J., Li, X.F., Meng, L.M. (2011). Mining data correlation from multi-faceted sensor data in the internet of things.  <i>China Communications</i>, 8(1): 132-139.</td>
+        <td>Cao, D., Qiao, X.Q., Gelernter, J., Li, X.F., Meng, L.M. (2011). Mining data correlation from multi-faceted sensor data in the internet of things.  <i>China Communications</i>, 8(1): 132-139. <a id="pdf" href="Mining Data Correlation from Multi-faceted Sensor Data in the Internet of Things.pdf"></a></td>
       </tr>
       <tr>
-        <td><a id="pdf" href="Automatic document.pdf"></a></td>
-        <td>Cao, D., Gelernter, J., Carbonell, J. (2010). Automatic document filing according to user categories. <i>Computing Science and Statistics</i>. Omitted from these conference proceedings due to publisher oversight. </td>
+        <td>Cao, D., Gelernter, J., Carbonell, J. (2010). Automatic document filing according to user categories. <i>Computing Science and Statistics</i>. Omitted from these conference proceedings due to publisher oversight. <a id="pdf" href="Automatic document.pdf"></a></td>
       </tr>
       <tr>
-        <td><a id="pdf" href="relevance studies.pdf"></a></td>
-        <td>Gelernter, J., Cao, D. and Carbonell, J. (2010).  Studies on relevance, ranking and results display.  <i>Journal of Computing </i>2(6), 7-20. </td>
+        <td>Gelernter, J., Cao, D. and Carbonell, J. (2010).  Studies on relevance, ranking and results display.  <i>Journal of Computing </i>2(6), 7-20. <a id="pdf" href="relevance studies.pdf"></a></td>
       </tr>
       <tr>
-        <td><a id="pdf" href="Fuzzy.pdf"></a></td>
-        <td>Gelernter, J, Cao, D., Lu, R., Fink, E., Carbonell, J. (2009). Creating and visualizing fuzzy document classification. <i>IEEE Conference on Man, Systems and Cybernetics, October 11-14, San Antonio, Texas </i></td>
+        <td>Gelernter, J, Cao, D., Lu, R., Fink, E., Carbonell, J. (2009). Creating and visualizing fuzzy document classification. <i>IEEE Conference on Man, Systems and Cybernetics, October 11-14, San Antonio, Texas </i><a id="pdf" href="Fuzzy.pdf"></a></td>
       </tr>
       <tr>
-        <td><a id="pdf" href="JASIST image indexing.pdf"></a></td>
-        <td>Gelernter, J. (2009). Image indexing in article component databases. <i>Journal of the American Society for Information Science and Technology</i>, 60(8), 1-12.</td>
+        <td>Gelernter, J. (2009). Image indexing in article component databases. <i>Journal of the American Society for Information Science and Technology</i>, 60(8), 1-12. <a id="pdf" href="JASIST image indexing.pdf"></a></td>
       </tr>
       <tr>
-        <td><a id="pdf" href="sigspatial.pdf"></a></td>
-        <td>Gelernter, J. (2008). Data mining of maps and their automatic region-time-theme classification. Presented at The 16th ACM SIGSPATIAL International Conference on Advances in Geographic Information Systems (ACM GIS 2008), November 5-7, 2008, Irvine, CA, USA. Published in <i>The SigSpatial Special</i>, Volume 1, Number 1, November 2008 </td>
+        <td>Gelernter, J. (2008). Data mining of maps and their automatic region-time-theme classification. Presented at The 16th ACM SIGSPATIAL International Conference on Advances in Geographic Information Systems (ACM GIS 2008), November 5-7, 2008, Irvine, CA, USA. Published in <i>The SigSpatial Special</i>, Volume 1, Number 1, November 2008 <a id="pdf" href="sigspatial.pdf"></a></td>
       </tr>
       <tr>
-        <td><a id="pdf" href="traditional resources.pdf"></a></td>
-        <td>Gelernter, J. and Lesk. M. (2008). Traditional resources help interpret texts. <i>Conference on Information and Knowledge Management, October 26-30, 2008, Napa Valley California, U.S.A.</i></td>
+        <td>Gelernter, J. and Lesk. M. (2008). Traditional resources help interpret texts. <i>Conference on Information and Knowledge Management, October 26-30, 2008, Napa Valley California, U.S.A.</i> <a id="pdf" href="traditional resources.pdf"></a></td>
       </tr>
       <tr>
-        <td><a id="pdf" href=".pdf"></a></td>
-        <td>Gelernter, J. and Lesk. M. (2008). Is your map here? <i>The 17th International Research Symposium on Computer-based Cartography, September 8-11, 2008, Shepherdstown, West Virginia, U.S.A.</i></td>
+        <td>Gelernter, J. and Lesk. M. (2008). Is your map here? <i>The 17th International Research Symposium on Computer-based Cartography, September 8-11, 2008, Shepherdstown, West Virginia, U.S.A.</i> <a id="pdf" href=".pdf"></a></td>
       </tr>
       <tr>
-        <td><a id="pdf" href="tagging.pdf"></a></td>
-        <td>Gelernter, J. (2007). A quantitative analysis of collaborative tags: Evaluation for information retrieval: A preliminary study. <i>The 3rd International Conference on Collaborative Computing: Networking, Applications and Work Sharing jointly sponsored by Create-Net, and the International Communications Sciences and Technology Association (ICST)</i>. Crowne Plaza White Plains, New York, USA, November 12-15, 2007, 376-381.</td>
+        <td>Gelernter, J. (2007). A quantitative analysis of collaborative tags: Evaluation for information retrieval: A preliminary study. <i>The 3rd International Conference on Collaborative Computing: Networking, Applications and Work Sharing jointly sponsored by Create-Net, and the International Communications Sciences and Technology Association (ICST)</i>. Crowne Plaza White Plains, New York, USA, November 12-15, 2007, 376-381. <a id="pdf" href="tagging.pdf"></a></td>
       </tr>
-      </table>
-	</p>  </br> </br>
+      </table></div>
+	</p>  </br>
 
-    <h2 class="padbottom2"><a name="Books">Books</a></h2> 
-    <p>
+    <h2><a name="Books">Books</a></h2> 
+    <p><div class="citation">
       <table>
         <!--- got a bunch of book chapters -->
         <tr>
-            <td><a id="pdf" href="LNCS paper.pdf"></a></td>
-            <td>Gelernter, J., Cao, D., Carley, K. (2011). Extraction of Spatio-Temporal Data for Social Networks, in T. Özyer et. al, <i>The Influence of Technology on Social Network Analysis and Mining</i>.  Springer, in press. </td>
+            <td>Gelernter, J., Cao, D., Carley, K. (2011). Extraction of Spatio-Temporal Data for Social Networks, in T. Özyer et. al, <i>The Influence of Technology on Social Network Analysis and Mining</i>.  Springer, in press. <a id="pdf" href="LNCS paper.pdf"></a></td>
         </tr>
         <tr>
-            <td><a id="pdf" href="Book chapter.pdf"></a></td>
-            <td>Gelernter, J. (2010 submitted).  Mining journal article components: the case of map graphics   Ed. N. Tang <i>Information Extraction from the Internet</i>. (pp. 57-72).  IConcept Press. [ISBN: 978-14563570-0-9] </td>
+            <td>Gelernter, J. (2010 submitted).  Mining journal article components: the case of map graphics   Ed. N. Tang <i>Information Extraction from the Internet</i>. (pp. 57-72).  IConcept Press. [ISBN: 978-14563570-0-9] <a id="pdf" href="Book chapter.pdf"></a></td>
         </tr>
         <tr>
-            <td></td>
             <td>Gelernter, J. (2009). <i>Intelligent information retrieval for maps</i>. Saarbrueken, Germany: VDM Verlag. ISBN: 978-3-639-14359-1]</td>
         </tr>
         <tr>
-            <td><a id="pdf" href="dumova.pdf"></a></td>
-            <td>Gelernter, J. (2009).  Neogeography.  In T. Dumova and R. Fiordo (Eds), <i>Handbook of Research on Social Interaction Technologies and Collaboration Software</i>. [ISBN: 978-1-60566-368-5]</td>
+            <td>Gelernter, J. (2009).  Neogeography.  In T. Dumova and R. Fiordo (Eds), <i>Handbook of Research on Social Interaction Technologies and Collaboration Software</i>. [ISBN: 978-1-60566-368-5] <a id="pdf" href="dumova.pdf"></a></td>
         </tr>
-      </table>
-    </p>  <br /> <br />
+      </table></div>
+    </p>  <br />
     
-    <h2 class="padbottom2"><a name="Talks">Talks</a></h2> 
-    <p>
+    <h2><a name="Talks">Presentations (selected)</a></h2> 
+    <p><div class="citation">
       <table>
         <tr>
-            <td></td>
             <td>Gelernter, J. (2013).  Research overview: Geolocation and Attention.  University of Maryland Center for Advanced Computer Studies, July 1, 2013. </td>
         </tr>
         <tr>
-            <td></td>
             <td>Gelernter, J. (2013).  Geolocation for intelligent law enforcement.  Technology Symposium, Digital Intelligence and Investigation Directorate, June 12, 2013.</td>
         </tr>
         <tr>
-            <td></td>
             <td>Gelernter, J. (2013).  Location intelligence through mining text data.  Topographic Engineering Center of the U.S. Army Research Engineering and Development Center, June 11, 2013.</td>
         </tr>
         <tr>
-            <td></td>
             <td>Gelernter, J. (2013).  Related research and our HourMap.  National Geospatial-Intelligence Agency (NGA).  Springfield, Virginia.  June 6, 2013.</td>
         </tr>
         <tr>
-            <td></td>
             <td>Gelernter, J. (2012).  Geo-locating Twitter messages.  Pittsburgh Supercomputing Center.  February 28, 2012. </td>
         </tr>
         <tr>
-            <td></td>
             <td>Gelernter, J. (2010).  Georeferencing for social network analysis.  Center for Computational Analysis and Organizational Systems (CASOS), Carnegie Mellon University, September 21, 2010.</td>
         </tr>
         <tr>
-            <td></td>
             <td>Gelernter, J. (2010).  Prototype of a data integration tool.  Society for Prevention Research, Denver, Colorado, June 1, 2010.</td>
         </tr>
         <tr>
-            <td></td>
             <td>Gelernter, J. (2009). Varied Applications of Ontology for Vertical Search, Information Visualization, and Data Fusion. Language Technologies Institute Seminar Series. </td>
         </tr>
         <tr>
-            <td></td>
             <td>Gelernter, J. (2009). Methods to improve information retrieval through ontologies and visualization. Digital Library Colloquium, Carnegie Mellon University, January 14th, 2009.</td>
         </tr>
         <tr>
-            <td></td>
             <td>Gelernter, J. (2008). Research in methods to improve information retrieval. State University of New York at Buffalo. November 19, 2008.</td>
         </tr>
         <tr>
-            <td></td>
             <td>Gelernter, J. (2008). MapSearch. Research Seminar, Google, Inc., New York City, July 2, 2008.</td>
         </tr>
         <tr>
-            <td></td>
             <td>Gelernter, J. (2008). A new look at ontologies for information retrieval. Center for Intelligent Information Retrieval, University   of Massachusetts at Amherst, May 14, 2008.</td>
         </tr>
-        <tr>
-            <td></td>
-            <td>Gelernter, J. (2008). The next generation catalog. Simmons College, Massachusetts, May 12, 2008.</td>
-        </tr>
-      </table>
-    </p>  </br> </br>
+      </table></div>
+    </p>  </br>
     
     <h2 class="padbottom2"><a name="Courses">Courses</a></h2> 
     <p>
@@ -374,7 +338,7 @@ a:visited {
     <h2 class="padbottom2"><a name="Projects">Past Projects</a></h2> 
     <p>
         <a href="http:/www.metacarta.com">MetaCarta</a> - See <i> Latest News </i> <br />
-        <a href="http://www.casos.cs.cmu.edu/projects/ora/">*ORA</a> - contribued geolocation code. <br />
+        <a href="http://www.casos.cs.cmu.edu/projects/ora/">*ORA</a> - contribued geolocation code <br />
         <a href="http://www.geongrid.org/index.php/gateways/paleolit"> GeonGrid </a> - See <i> PaleoLit </i><br />
     </p>  </br> </br>
 
